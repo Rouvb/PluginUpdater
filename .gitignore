@@ -1,2 +1,11 @@
 # venv Folder
 venv/
+
+# sftp.json
+sftp.json
+
+# plugin files
+plugins/*
+
+# test code
+test.py
