@@ -21,6 +21,6 @@ localfiles = os.listdir("./plugins")
 # Upload plugins to SFTP servers.
 for i in range(len(localfiles)):
     localpath = f"./plugins/{localfiles[i]}"
-    remotepath = f"./test-plugins/{localfiles[i]}"
+    remotepath = f"./plugins/{localfiles[i]}"
     sftp_client.put(localpath, remotepath)
     print(f"{localfiles[i]} has been uploaded.")
