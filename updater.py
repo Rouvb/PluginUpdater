@@ -38,9 +38,10 @@ try:
                     remote_base_name, remote_version = extract_base_name_and_version(remote_file)
                     # Remove old version plugin if local version and remote version is not matched
                     if base_name == remote_base_name and local_version != remote_version:
-                        sftp_client.remove(f"./plugins/{remote_file}")
-                        print(f"{config['name']}: {remote_file} has been removed.")
-                        remote_files.remove(remote_file) 
+                        if remote_file.endswith(".jar"):
+                            sftp_client.remove(f"./plugins/{remote_file}")
+                            print(f"{config['name']}: {remote_file} has been removed.")
+                            remote_files.remove(remote_file) 
 
         # Upload file
         for localfile in localfiles:
