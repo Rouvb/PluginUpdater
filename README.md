@@ -1,5 +1,5 @@
 # What is Plugin Updater?
-Transfer plugin files from your local folder using SFTP.
+Transfer your plugins to multiple SFP servers and remove the old version plugins.
 # Installation
 - python -m venv virtualenv_name
 - **Windows** - call virtualenv_name/Scripts/activate
