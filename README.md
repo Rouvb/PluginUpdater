@@ -1,5 +1,5 @@
 # What is Plugin Updater?
-Transfer your plugins to multiple SFP servers and remove the old version plugins.
+Transfer your plugins to multiple SFTP servers and remove the old version plugins.
 # Installation
 - python -m venv virtualenv_name
 - **Windows** - call virtualenv_name/Scripts/activate
